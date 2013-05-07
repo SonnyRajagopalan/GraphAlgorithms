@@ -22,46 +22,7 @@ import java.util.TreeSet; // Where the input tree edges are going to be stored (
 import java.util.HashSet; // Where the two working forests are going to be stored
 import java.util.Vector;  // Where the "v tree"  and "u tree" are held.
 
-class Edge implements Comparable <Edge>
-{
-    String u;
-    String v;
-    int w;
-    
-    public Edge (String u, String v, int w)
-	{
-	    this.u = u;
-	    this.v = v;
-	    this.w = w;
-	}
-
-    public String getU ()
-    {
-	return u;
-    }
-    
-    public String getV ()
-    {
-	return v;
-    }
-
-    public int getWeight ()
-    {
-	return w;
-    }
-
-    public int compareTo (Edge anotherEdge)
-    {
-	if (this.w < anotherEdge.w)
-	    {
-		return -1;
-	    }
-	else
-	    {
-		return 1;
-	    }
-    }
-}
+import com.srajagopalan.algorithms.dataStructures.graph.Edge;
 
 class MSTKruskal
 {

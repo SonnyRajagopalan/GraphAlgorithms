@@ -29,8 +29,6 @@ import java.lang.UnsupportedOperationException;
 import java.lang.ClassCastException;
 import java.lang.NullPointerException;
 
-import com.srajagopalan.algorithms.dataStructures.graph.Vertex;
-
 class BellmanFord
 {
     private static final int HORRENDOUSLY_LARGE_NUMBER = 999;
